@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inbetween"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#337B81">
+
+    <Button
+        android:id="@+id/toexchange"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="288dp"
+        android:backgroundTint="#76CA7A"
+        android:text="Exchange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/toOther"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="320dp"
+        android:backgroundTint="#76CA7A"
+        android:text="Other"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
