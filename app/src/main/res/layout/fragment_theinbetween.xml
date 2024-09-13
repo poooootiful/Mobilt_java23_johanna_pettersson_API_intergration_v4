@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".theinbetween"/>
+    android:background="#337B81"
+    tools:context=".Theinbetween"
+    tools:visibility="visible">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/toother"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="324dp"
+            android:backgroundTint="#76CA7A"
+            android:text="Other"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/toex"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#76CA7A"
+            android:text="Exhange"
+            app:layout_constraintBottom_toTopOf="@+id/toother"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/menutext"
+            android:layout_width="91dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="196dp"
+            android:autoSizeTextType="uniform"
+            android:text="Menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
