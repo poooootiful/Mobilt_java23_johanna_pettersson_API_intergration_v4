@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exchangemenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#337B81"
+    tools:context=".Exchange" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/exchangelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/fromcur"
+            android:layout_width="96dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.272"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.285" />
+
+        <Spinner
+            android:id="@+id/tocur"
+            android:layout_width="96dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="104dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.217"
+            app:layout_constraintStart_toEndOf="@+id/fromcur"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.285" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="214dp"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:hint="Input"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.106"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.127" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="58dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:autoSizeTextType="uniform"
+            android:text="To"
+            app:layout_constraintEnd_toStartOf="@+id/tocur"
+            app:layout_constraintHorizontal_bias="0.474"
+            app:layout_constraintStart_toEndOf="@+id/fromcur"
+            app:layout_constraintTop_toBottomOf="@+id/input" />
+
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="214dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="84dp"
+            android:ems="10"
+            android:hint="Result"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/exchange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="144dp"
+            android:backgroundTint="#76CA7A"
+            android:text="Exchange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
